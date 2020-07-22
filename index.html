@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adnan Rifat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- external css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- login part -->
+    <section id="login-form">
+        <div class="login-container">
+            <!-- login form -->
+            <div class="loginForm">
+                <h1 class="text-center">Welcome to <span class="bank"> Pioneer Bank</span></h1>
+                <div class="submit-area">
+                    <h4>Login</h4>
+                    <input type="email" placeholder="Email">
+                    <br>
+                    <input type="password" placeholder="Password">
+                    <br>
+                    <button class="btn circle-btn">Enter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Actual banking part -->
+    <section id="transaction-area">
+        <div class="container">
+            <!-- current amount -->
+            <div class="transaction-container">
+                <div class="row">
+                    <div class="column">
+                        <h3>Deposit</h3>
+                        <h1>$ <span id="deposit">130</span></h1>
+                    </div>
+                    <div class="column">
+                        <h3>Withdraw</h3>
+                        <h1>$ <span id="withdraw">00</span></h1>
+                    </div>
+                    <div class="column">
+                        <h3>Balance</h3>
+                        <h1>$ <span id="balance">1290</span></h1>
+                    </div>
+                </div>
+                <!-- input field -->
+                <div class="transaction">
+                    <!-- deposit field -->
+                    <div class="input-output">
+                        <h3>Deposit</h3>
+                        <input id="deposit-amount" type="number" placeholder="Enter amount">
+                        <button class="btn circle-btn" id="deposit-btn">Deposit</button>
+                    </div>
+                    <!-- withdraw field -->
+                    <div class="input-output">
+                        <h3>Withdraw</h3>
+                        <input id="withdraw-amount" type="number" placeholder="Enter amount">
+                        <button class="btn circle-btn" id="withdraw-btn">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- external javaScript file -->
+    <script src="./js/dom.js"></script>
+</body>
+</html>
